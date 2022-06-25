@@ -6,9 +6,9 @@ import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.component';
 const App = () => {
     return (
-    <Routes> // Allows to register route level components
+    <Routes>
       <Route path='/' element={<Navigation />}>
-        <Route index = {true} element ={ <Home /> } /> // Will render the component when it matches the route your looking for
+        <Route index = {true} element ={ <Home /> } />
         <Route path='shop/*' element={<Shop />} />
         <Route path = 'auth' element = { <Authentication /> }/>
         <Route path='checkout' element={<Checkout />} />
